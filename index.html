@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone Website</title>
+
+    <!-- linking the cdnjs libraries for icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- linking the css file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<!--This is the navigation bar 1 /Heading 1-->
+
+<div class="navbar">
+    <!--logo-layout -->
+    <div class="logo-layout border ">
+        <!-- logo -->
+        <div class="logo"></div>
+     </div>
+
+
+<!-- this is delivery address of navigation bar -->
+
+    <!-- address layout -->
+    <div class="address-layout border">
+        <!-- address -->
+        <div class="address">
+            <p id="delivery">Delivering to Bengaluru 560076</p>
+            <div class="address-icon">
+                <i class="fa-solid fa-location-dot"></i>
+                <p id="location"><b>Update location</b></p> 
+            </div>
+        </div>
+    </div>
+
+
+<!-- This is for search tab of navigation bar -->
+
+    <div class="search-tab">
+        <!-- All departments -->
+        <select name="department" class="search-select  border1">
+            <option value="all" selected >All</option>
+            <option value="arts-and-crafts">Arts & Crafts</option>
+            <option value="automotive">Automotive</option>
+            <option value="baby">Baby</option>
+            <option value="beauty-and-personal-care">Beauty & Personal Care</option>
+            <option value="books">Books</option>
+            <option value="boys-fashion">Boys' Fashion</option>
+            <option value="computers">Computers</option>
+            <option value="deals">Deals</option>
+            <option value="digital-music">Digital Music</option>
+            <option value="electronics">Electronics</option>
+            <option value="girls-fashion">Girls' Fashion</option>
+            <option value="health-and-household">Health & Household</option>
+            <option value="home-and-kitchen">Home & Kitchen</option>
+            <option value="industrial-and-scientific">Industrial & Scientific</option>
+            <option value="kindle-store">Kindle Store</option>
+            <option value="luggage">Luggage</option>
+            <option value="mens-fashion">Men's Fashion</option>
+            <option value="movies-and-tv">Movies & TV</option>
+            <option value="music-cds-and-vinyl">Music, CDs & Vinyl</option>
+            <option value="pet-supplies">Pet Supplies</option>
+            <option value="prime-video">Prime Video</option>
+            <option value="software">Software</option>
+            <option value="sports-and-outdoors">Sports & Outdoors</option>
+            <option value="tools-and-home-improvement">Tools & Home Improvement</option>
+            <option value="toys-and-Games">Toys & Games</option>
+            <option value="video-games">Video Games</option>
+            <option value="womens-fashion">Women's Fashion</option>
+        </select>
+
+        <!--search button -->
+        <input placeholder="Search Amazon" class="search-input">
+
+        <!--search icon -->
+        <div class="search-icon border2">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+
+<!-- This is for Language selection of navigation bar -->
+<div class="language-layout border">
+        <!-- flag -->
+        <div class="flag">
+            <img src="images/india_flag.png" alt="Indian flag" height="20px" width="20px">
+        </div>
+        <!-- EN and arrow mark -->
+       <p style="font-size: 1.4rem;">EN <i class="fa fa-caret-down"></i></p>
+
+    <!-- for language menu layout -->
+    <div class="language-menu-layout">
+        <div class="language-menu-top">
+          <p>
+            <input type="radio"  id="eng" name="lang" value="eng" checked/><label for="eng">English - EN</label>
+          </p>
+        </div>
+        <div class="language-menu-middle">
+        <p>
+            <input type="radio" id="es" name="lang" value="es" / ><label for="es">हिन्दी - HI</label>
+        </p>
+          <p>
+            <input type="radio" id="ar" name="lang" value="ar" /><label for="ar">தமிழ்- TA</label>
+          </p>
+          <p>
+            <input type="radio" id="de" name="lang" value="de" /><label for="de">తెలుగు - TE</label>
+          </p>
+          <p>
+            <input type="radio" id="he" name="lang" value="he" /><label for="he">ಕನ್ನಡ- KN</label>
+          </p>
+          <p>
+            <input type="radio" id="ko" name="lang" value="ko" /><label for="ko">മലയാളം- ML</label>
+          </p>
+          <p>
+            <input type="radio" id="pt" name="lang" value="pt" /><label for="pt">বাংলা - BN</label >
+            </p>
+          <p>
+            <input type="radio" id="zh" name="lang" value="zh" /><label for="zh">मराठी - MR</label>
+          </p>
+        <p style="color: blue;">Learn more</p>
+        </div>
+        <div class="language-menu-bottom">
+                 <p>You are shopping on Amazon.in</p>
+                 <p style="color: blue;">Change country/region.</p>
+        </div>
+    </div>
+</div>
+<!-- This is for Sign in and account of navigation bar -->
+    <div class="sign-in-layout border">
+        <p class="sign-in">Hello,sign in</p>
+        <p class="accounts" ><b>Account & Lists </b><i class="fa fa-caret-down"></i></p>
+
+       <!-- for sign in complete menu layout -->
+        <div class="signin-menu-layout">
+            <!-- signin menu top div -->
+            <div class="signin-menu-top">
+                <button class="signin-button">Sign in</button><br>
+                <p class="new-customer">New Customer?<a href="#" style="color: blue;">Start here.</a></p>
+            </div>
+            <!-- signin menu bottom div -->
+            <div class="signin-menu-bottom">
+                <!-- Your Lists section -->
+                <div class="your-lists-section">
+                    <p style="font-size: 1.6rem;"><b>Your Lists</b></p>
+                    <br>
+                    <ul>
+                        <li>Create a wish List</li>
+                        <li>Wish from any Website</li>
+                        <li>Baby Watchlist</li>
+                        <li>Discover Your Style</li>
+                        <li>Explore Showroomp</li>
+                    </ul>
+                </div>
+                <!-- Your Account section -->
+                <div class="your-account-section">
+                    <p style="font-size: 1.6rem;"><b>Your Account</b></p>
+                    <br>
+                    <ul>
+                        <li>Your Account</li>
+                        <li>Your Orders</li>
+                        <li>Your Watchlist</li>
+                        <li>Your Recommendations</li>
+                        <li>Your Prime Membership</li>
+                        <li>Your Prime Video</li>
+                        <li>Your Subscribe & Save Items</li>
+                        <li>Memberships & Subscriptions</li>
+                        <li>Your Seller Account</li>
+                        <li>Manage Your Content and Devices</li>
+                        <li>Your Free Amazon Bussiness Account</li>
+                       
+                    </ul>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+
+<!-- This is for Returns and orders of navigation bar -->
+   <div class="returns-orders-layout border">
+        <p class="sign-in">Returns</p>
+        <p class="accounts" ><b>& Orders</b></i></p>
+   </div>
+
+
+<!-- This is for cart icon of navigation bar  -->
+     <div class= "cart-icon border">
+        <i class="fa-solid fa-cart-shopping" style="font-size: 2.5rem;"></i>
+        <b style="font-size: 1.4rem;">Cart</b>
+     </div>
+</div> 
+
+
+<!-- This is for Navigationbar 2 / heading 2 -->
+<div class="navbar2">
+  <div class="panel-left">
+    <!-- Menu icon and all -->
+         <div class="menu-icon border">
+            <i class="fa-solid fa-bars"></i>&#160 <b>All</b>
+         </div>
+    <!-- fresh -->
+    <div class = " panel prime border"style="width: 6.5rem; "><p>Fresh</p>&#160<i class="fa fa-caret-down"></i>
+        <div class="prime-image fresh-image">
+            <img src="images/fresh-image.jpg" alt="Prime-image" width="300px" height="320px">
+        </div>
+    </div>
+    <!-- Amazon mini tv -->
+      <div class = "panel border" style="width: 11.8rem;">Amazon miniTv</div>
+    <!-- Sell -->
+       <div class = "panel  border"style="width: 4.1rem;">Sell</div>
+    <!-- Mobiles -->
+      <div class = "panel  border"style="width: 6.8rem;">Mobiles</div>
+    <!-- Today's Deals -->
+        <div class = "panel  border" style="width: 10.3rem;">Today's Deals</div>
+    <!-- Electronics -->
+          <div class = "panel  border"style="width: 8.7rem; ">Electronics</div>
+    <!-- prime -->
+        <div class = " panel prime border"style="width: 6rem; "><p>Prime </p>&#160<i class="fa fa-caret-down"></i>
+            <div class="prime-image">
+                <img src="images/prime_image.jpg" alt="Prime-image" width="300px" height="320px">
+            </div>
+        </div>
+   </div>
+
+    <div class="panel-right">
+    <!-- header2 image -->
+        <div class="border">
+            Shopping Made Easy| Download the App
+        </div>
+    </div>
+</div>    
+</div>
+</header>
+
+<!-- This is our hero section -->
+<div class="container">
+    <div class="wrapper">
+        <img src="images/head1.jpg">
+        <img src="images/head2.jpg">
+        <img src="images/head3.jpg">
+        <img src="images/head4.jpg">
+        <img src="images/head5.jpg">
+    </div>
+</div>
+<!-- This is our Product-content-1 section -->
+<div class="shop-section">
+
+    <!-- box1 -->
+    <div class="box">
+     <div class="box-content">
+        <h2>Clothes</h2>
+        <div class="box-image" style="background-image: url('images/box1_image.jpg');"></div>
+        <p class="see-more">See more</p>
+     </div>
+    </div>
+
+    <!-- box2 -->
+    <div class="box">
+        <div class="box-content">
+            <h2>Health & Personal Care</h2>
+            <div class="box-image" style="background-image: url('images/box2_image.jpg');"></div>
+            <p class="see-more">See all offers</p>
+         </div>
+    </div>
+    
+    <!-- box3 -->
+    <div class="box">
+        <div class="box-content">
+            <h2>Furniture</h2>
+            <div class="box-image" style="background-image: url('images/box3_image.jpg');"></div>
+            <p  class="see-more">Explore  more</p>
+         </div>
+    </div>
+    
+    <!-- box4 -->
+    <div class="box">
+        <div class="box-content">
+            <h2>Electronics</h2>
+            <div class="box-image" style="background-image: url('images/box4_image.jpg');"></div>
+            <p  class="see-more">See more</p>
+         </div>
+    </div>
+
+    <!-- box5 -->
+    <div class="box">
+        <div class="box-content">
+           <h2>Beauty Picks</h2>
+           <div class="box-image" style="background-image: url('images/box5_image.jpg');"></div>
+           <p  class="see-more">See all offers</p>
+        </div>
+       </div>
+
+    <!-- box6 -->
+       <div class="box">
+           <div class="box-content">
+               <h2>Pet Care </h2>
+               <div class="box-image" style="background-image: url('images/box6_image.jpg');"></div>
+               <p  class="see-more">See more</p>
+            </div>
+       </div>
+       
+    <!-- box7 -->
+       <div class="box">
+           <div class="box-content">
+               <h2>New Arrival and Toys</h2>
+               <div class="box-image" style="background-image: url('images/box7_image.jpg');"></div>
+               <p class="see-more">Explore more</p>
+            </div>
+       </div>
+       
+    <!-- box8 -->
+       <div class="box">
+           <div class="box-content">
+               <h2>Discover Fasion Trends</h2>
+               <div class="box-image" style="background-image: url('images/box8_image.jpg');"></div>
+               <p class="see-more">See more</p>
+            </div>
+       </div>
+
+    <!-- box9 -->
+       <div class="box">
+        <div class="box-content">
+           <h2>Up to 60% off| Styles for</h2>
+           <h2>women</h2>
+           <div class="box-image-small-layout">
+               <div class="box-small-image" style="background-image: url('images/box9/box9_1.jpg');"><br><br><br><br><br><br><br>
+                <p class="small-text">Women's Clothing</p>
+               </div>
+               <div class="box-small-image" style="background-image: url('images/box9/box9_2.jpg');"><br><br><br><br><br><br><br>
+                <p class="small-text">Footwear+Handbags</p>     
+               </div>
+
+               <div class="box-small-image" style="background-image: url('images/box9/box9_3.jpg');"><br><br><br><br><br><br><br>
+                <p class="small-text">Watches</p>
+               </div>
+               
+               <div class="box-small-image" style="background-image: url('images/box9/box9_4.jpg');"><br><br><br><br><br><br><br>
+                <p class="small-text">Fashion jewellery</p>
+               </div>
+           </div>
+           <p class="see-more">End of season sales</p>
+        </div>
+       </div>
+
+    <!-- box10 -->
+       <div class="box">
+        <div class="box-content">
+           <h2>Appliances for your home|</h2>
+           <h2>Up to 55% off</h2>
+           <div class="box-image-small-layout">
+               <div class="box-small-image" style="background-image: url('images/box10/box10_1.jpg');"><br><br><br><br><br><br><br>
+                <p class="small-text">Air conditioners</p>
+               </div>
+               <div class="box-small-image" style="background-image: url('images/box10/box10_2.jpg');"><br><br><br><br><br><br><br>
+                <p class="small-text">Refrigerators</p>     
+               </div>
+
+               <div class="box-small-image" style="background-image: url('images/box10/box10_3.jpg');"><br><br><br><br><br><br><br>
+                <p class="small-text">Microwaves</p>
+               </div>
+               
+               <div class="box-small-image" style="background-image: url('images/box10/box10_4.jpg');"><br><br><br><br><br><br><br>
+                <p class="small-text">Washing Machines</p>
+               </div>
+           </div>
+           <p class="see-more">See more</p>
+        </div>
+       </div>
+
+    <!-- box11 -->
+       <div class="box">
+        <div class="box-content">
+           <h2>Fly high,pay less|Deals on</h2>
+           <h2>flight tickets</h2>
+           <div class="box-image-small-layout">
+               <div class="box-small-image" style="background-image: url('images/box11/box11_1.jpg');"><br><br><br><br><br><br><br>
+                <p class="small-text">Delhi starting Rs.2499/-</p>
+               </div>
+               <div class="box-small-image" style="background-image: url('images/box11/box11_2.jpg');"><br><br><br><br><br><br><br>
+                <p class="small-text">Jaipur starting Rs.2299/-</p>     
+               </div>
+
+               <div class="box-small-image" style="background-image: url('images/box11/box11_3.jpg');"><br><br><br><br><br><br><br>
+                <p class="small-text">Mumbai starting Rs.3499/-</p>
+               </div>
+               
+               <div class="box-small-image" style="background-image: url('images/box11/box11_4.jpg');"><br><br><br><br><br><br><br>
+                <p class="small-text">Travel needs</p>
+               </div>
+           </div>
+           <p class="see-more">See all offers</p>
+        </div>
+       </div>
+
+    <!-- box12 -->
+       <div class="box">
+        <div class="box-content">
+           <h2>Starting RS.99/- | All your</h2>
+           <h2> home improvement needs</h2>
+           <div class="box-image-small-layout">
+               <div class="box-small-image" style="background-image: url('images/box12/box12_1.jpg');"><br><br><br><br><br><br><br>
+                <p class="small-text">Spin mops,wipes & more </p>
+               </div>
+               <div class="box-small-image" style="background-image: url('images/box12/box12_2.jpg');"><br><br><br><br><br><br><br>
+                <p class="small-text">Bathroom hardware </p>     
+               </div>
+
+               <div class="box-small-image" style="background-image: url('images/box12/box12_3.jpg');"><br><br><br><br><br><br><br>
+                <p class="small-text">Hammers,screwdrivers & more</p>
+               </div>
+               
+               <div class="box-small-image" style="background-image: url('images/box12/box12_4.jpg');"><br><br><br><br><br><br><br>
+                <p class="small-text">Extension boards, plugs & more</p>
+               </div>
+           </div>
+           <p class="see-more">See more</p>
+        </div>
+       </div>     
+</div>
+
+<!-- To put a media like video or arduio -->
+<div class="poster-1">
+    <img src="images/poster_1.jpeg" alt="Your Image" class="poster-1-image">
+</div>
+
+<!-- this the product scoller section-->
+<div class="product-scoller">
+        <h2 style="display: inline-block;">Up to 70% off | Home decor | Curated from stores near you</h2>&nbsp;&nbsp;&nbsp;
+        <p style="display: inline-block;">See more offers</p>
+    <div class="products">
+        <img src="images/product_scoller/pic1.jpg" alt="" class="scoller-image">
+        <img src="images/product_scoller/pic2.jpg" alt="" class="scoller-image">
+        <img src="images/product_scoller/pic3.jpg" alt="" class="scoller-image">
+        <img src="images/product_scoller/pic4.jpg" alt="" class="scoller-image">
+        <img src="images/product_scoller/pic5.jpg" alt="" class="scoller-image">
+        <img src="images/product_scoller/pic6.jpg" alt=""class="scoller-image">
+        <img src="images/product_scoller/pic7.jpg" alt="" class="scoller-image">
+        <img src="images/product_scoller/pic8.jpg" alt="" class="scoller-image">
+        <img src="images/product_scoller/pic9.jpg" alt="" class="scoller-image">
+        <img src="images/product_scoller/pic10.jpg" alt="" class="scoller-image">
+        <img src="images/product_scoller/pic11.jpg" alt="" class="scoller-image">
+        <img src="images/product_scoller/pic12.jpg" alt="" class="scoller-image">
+        <img src="images/product_scoller/pic13.jpg" alt="" class="scoller-image">
+        <img src="images/product_scoller/pic14.jpg" alt="" class="scoller-image">
+        <img src="images/product_scoller/pic15.jpg" alt="" class="scoller-image">
+        <img src="images/product_s;coller/pic16.jpg" alt="" class="scoller-image">
+        <img src="images/product_scoller/pic17.jpg" alt="" class="scoller-image">
+        <img src="images/product_scoller/pic18.jpg" alt="" class="scoller-image">
+        <img src="images/product_scoller/pic19.jpg" alt="" class="scoller-image">
+        <img src="images/product_scoller/pic20.jpg" alt="" class="scoller-image">
+    </div>
+</div>
+<!-- To put a poster -->
+
+<div class="poster-2">
+    <img src="images/poster_2.jpg" class="poster-2-image">
+</div>
+
+<!-- This is our Product-content-2 section -->
+<div class="shop-section">
+
+    <!-- box13 -->
+    <div class="box">
+     <div class="box-content">
+        <h2>Up to 50% off | Diabetes care device</h2>
+        <div class="box-image" style="background-image: url('images/box13.jpg');"></div>
+        <p class="see-more">see more</p>
+     </div>
+    </div>
+
+    <!-- box14 -->
+    <div class="box">
+        <div class="box-content">
+            <h2>Starting Rs-99/- | Start your finness journey</h2>
+            <div class="box-image" style="background-image: url('images/box14.jpg');"></div>
+            <p class="see-more">See more</p>
+         </div>
+    </div>
+    
+    <!-- box15 -->
+    <div class="box">
+        <div class="box-content">
+            <h2>Min. 50% off | Outdoor solar lights</h2>
+            <div class="box-image" style="background-image: url('images/box15.jpg');"></div>
+            <p class="see-more">Explore more</p>
+         </div>
+    </div>
+    
+    <!-- box16 -->
+    <div class="box">
+        <div class="box-content">
+            <h2>Up to 50% off | International brands</h2>
+            <div class="box-image" style="background-image: url('images/box16.jpg');"></div>
+            <p class="see-more">See all offers</p>
+         </div>
+    </div>
+</div>
+
+<!-- this the product scoller section -->
+<div class="product-scoller">
+    <h2 style="display: inline-block;">Up to 50% off | Sofas, dining table sets & more from stores near you</h2>&nbsp;&nbsp;&nbsp;
+    <p style="display: inline-block;">See more offers</p>
+<div class="products">
+    <img src="images/product_scoller_2/pic1.jpg" alt="" class="scoller-image">
+    <img src="images/product_scoller_2/pic2.jpg" alt="" class="scoller-image">
+    <img src="images/product_scoller_2/pic3.jpg" alt="" class="scoller-image">
+    <img src="images/product_scoller_2/pic4.jpg" alt="" class="scoller-image">
+    <img src="images/product_scoller_2/pic5.jpg" alt="" class="scoller-image">
+    <img src="images/product_scoller_2/pic6.jpg" alt=""class="scoller-image">
+    <img src="images/product_scoller_2/pic7.jpg" alt="" class="scoller-image">
+    <img src="images/product_scoller_2/pic8.jpg" alt="" class="scoller-image">
+    <img src="images/product_scoller_2/pic9.jpg" alt="" class="scoller-image">
+    <img src="images/product_scoller_2/pic10.jpg" alt="" class="scoller-image">
+    <img src="images/product_scoller_2/pic11.jpg" alt="" class="scoller-image">
+    <img src="images/product_scoller_2/pic12.jpg" alt="" class="scoller-image">
+    <img src="images/product_scoller_2/pic`13.jpg" alt="" class="scoller-image">
+    <img src="images/product_scoller_2/pic14.jpg" alt="" class="scoller-image">
+    <img src="images/product_scoller_2/pic15.jpg" alt="" class="scoller-image">
+    <img src="images/product_scoller_2/" alt="" class="scoller-image">
+    <img src="images/product_scoller_2/pic17.jpg" alt="" class="scoller-image">
+    <img src="images/product_scoller_2/pic18.jpg" alt="" class="scoller-image">
+    <img src="images/product_scoller_2/pic19.jpg" alt="" class="scoller-image">
+    <img src="images/product_scoller_2/pic20.jpg" alt="" class="scoller-image">
+</div>
+</div>
+
+<!-- this is the footer part -->
+      <!-- sign in footer -->
+      <div class="footer-signin-layout">
+        <div class="footer-sigin-content">
+         <p >See personalized recommendations</p>
+         <button class="footer-signin-button"><b>Sign in</b></button>
+         <p>New Customer?<a href="#" style="color: blue;">Start here.</a></p>
+        </div>
+      </div>
+<!-- Back to top -->
+<div class="back-to-top">
+    <p>Back to top</p>
+</div>
+
+
+<!-- footer information -->
+<div class="footer-info">
+    <div class="row">
+        <div class="col">
+            <div class="col-heading">Get to Know Us</div><br>
+            <ul>
+                <li>About Us</li>
+                <li>Careers</li>
+                <li>Press Releases</li>
+                <li>Amazon Science</li>
+            </ul>
+        </div>
+         <div class="col">
+            <div class="col-heading">
+                Connect with Us
+            </div><br>
+            <ul>
+                <li>Facebook</li>
+                <li> Twitter</li>
+                <li>Instagram</li>
+            </ul>
+        </div>
+        <div class="col">
+            <div class="col-heading">
+                Make Money with Us
+            </div><br>
+            <ul>
+                <li>Sell on Amazon </li>
+                <li>Sell under Amazon Accelerator</li>
+                <li>Protect and build youtr brand</li>
+                <li>Amazon global selling</li>
+                <li>Become an Affiliate</li>
+                <li>Fulfilment by Amazon</li>
+                <li>Advertise Your Products</li>
+                <li>Amazon Pay on Merchants</li>
+            </ul>
+        </div>
+        <div class="col">
+            <div class="col-heading">
+                Let Us Help You
+            </div><br>
+            <ul>
+                <li>COVID-19 and Amazon</li>
+                <li>Your Account</li>
+                <li>Returns Centre</li>
+                <li>100% Purchase Protection</li>
+                <li>Amazon App Download</li>
+                <li>Help</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-languages">
+        <div class="footer-icon-layout">
+            <img src="images/amazon_logo.png" alt="Amazon icon">
+            <button style="color:  #dddddd;"><i class="fa-solid fa-globe"></i>&nbsp;&nbsp;&nbsp;English</button>
+        </div>
+        <div class="country-names">
+            <ul>
+                <li>Australia</li>
+                <li>Brazil</li>
+                <li>Canada</li>
+                <li>China</li>
+                <li>France</li>
+                <li>Germany</li>
+                <li>Italy</li>
+                <li>Japan</li>
+                <li>Mexico</li>
+                <li>Netherlands</li>
+                <li>Poland</li>
+                <li>Singapore</li>
+                <li>Spain</li>
+                <li>Turkey</li>
+                <li>United Arab Emirates</li>
+                <li>United Kingdom</li>
+                <li>United States</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Footer services -->
+<div class="services">
+    <div  class="services__section">
+        <li>
+            AbeBooks
+            <p>
+              Books, art <br />
+              & collectibles
+            </p>
+          </li>
+    </div>
+    <div  class="services__section">
+        <li>
+           Amazon Web Services
+            <p>
+              Scalable Cloud <br />
+              Computing Services
+            </p>
+          </li>
+    </div>
+    <div  class="services__section">
+        <li>
+            Audible
+            <p>
+              Listen to Books & Original <br />
+              Audio Performances
+            </p>
+          </li>
+    </div>
+    
+   <div class="services__section">
+    <li>
+        Box Office Moj
+        <p>
+          Find Movie <br />
+          Box Office Data
+        </p>
+      </li>
+
+   </div>
+   <div class="services__section">
+    <li>
+       Kindle Direct Publishing
+        <p>
+          Indie Digital & Print Publishing <br />
+          Made Easy
+        </p>
+      </li>
+   </div>  
+
+
+   
+</div>
+
+
+
+<div class="copy">
+  <div class="privacy">
+    <a href="#">Conditions of Use & sale</a>
+    <a href="#">Privacy Notice</a>
+    <a href="#">Interest based Ads</a>
+  </div>
+  <p>© 1996-2023, Amazon.com, Inc. or its affiliates</p>
+</div>
+</body>
+</html>
